@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACBC19C122899757002E138D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC19C022899757002E138D /* AppDelegate.swift */; };
+		ACBC19C322899757002E138D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC19C222899757002E138D /* ViewController.swift */; };
+		ACBC19C622899757002E138D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC19C422899757002E138D /* Main.storyboard */; };
+		ACBC19C82289975C002E138D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBC19C72289975C002E138D /* Assets.xcassets */; };
+		ACBC19CB2289975C002E138D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC19C92289975C002E138D /* LaunchScreen.storyboard */; };
+		ACBC19D62289975D002E138D /* FooodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC19D52289975D002E138D /* FooodTrackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBC19D22289975D002E138D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBC19B522899757002E138D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBC19BC22899757002E138D;
+			remoteInfo = FooodTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACBC19BD22899757002E138D /* FooodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBC19C022899757002E138D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBC19C222899757002E138D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACBC19C522899757002E138D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACBC19C72289975C002E138D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBC19CA2289975C002E138D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACBC19CC2289975C002E138D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBC19D12289975D002E138D /* FooodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBC19D52289975D002E138D /* FooodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooodTrackerTests.swift; sourceTree = "<group>"; };
+		ACBC19D72289975D002E138D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBC19BA22899757002E138D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBC19CE2289975D002E138D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACBC19B422899757002E138D = {
+			isa = PBXGroup;
+			children = (
+				ACBC19BF22899757002E138D /* FooodTracker */,
+				ACBC19D42289975D002E138D /* FooodTrackerTests */,
+				ACBC19BE22899757002E138D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBC19BE22899757002E138D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBC19BD22899757002E138D /* FooodTracker.app */,
+				ACBC19D12289975D002E138D /* FooodTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBC19BF22899757002E138D /* FooodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				ACBC19C022899757002E138D /* AppDelegate.swift */,
+				ACBC19C222899757002E138D /* ViewController.swift */,
+				ACBC19C422899757002E138D /* Main.storyboard */,
+				ACBC19C72289975C002E138D /* Assets.xcassets */,
+				ACBC19C92289975C002E138D /* LaunchScreen.storyboard */,
+				ACBC19CC2289975C002E138D /* Info.plist */,
+			);
+			path = FooodTracker;
+			sourceTree = "<group>";
+		};
+		ACBC19D42289975D002E138D /* FooodTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBC19D52289975D002E138D /* FooodTrackerTests.swift */,
+				ACBC19D72289975D002E138D /* Info.plist */,
+			);
+			path = FooodTrackerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBC19BC22899757002E138D /* FooodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBC19DA2289975D002E138D /* Build configuration list for PBXNativeTarget "FooodTracker" */;
+			buildPhases = (
+				ACBC19B922899757002E138D /* Sources */,
+				ACBC19BA22899757002E138D /* Frameworks */,
+				ACBC19BB22899757002E138D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FooodTracker;
+			productName = FooodTracker;
+			productReference = ACBC19BD22899757002E138D /* FooodTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBC19D02289975D002E138D /* FooodTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBC19DD2289975D002E138D /* Build configuration list for PBXNativeTarget "FooodTrackerTests" */;
+			buildPhases = (
+				ACBC19CD2289975D002E138D /* Sources */,
+				ACBC19CE2289975D002E138D /* Frameworks */,
+				ACBC19CF2289975D002E138D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBC19D32289975D002E138D /* PBXTargetDependency */,
+			);
+			name = FooodTrackerTests;
+			productName = FooodTrackerTests;
+			productReference = ACBC19D12289975D002E138D /* FooodTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBC19B522899757002E138D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = gma712;
+				TargetAttributes = {
+					ACBC19BC22899757002E138D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					ACBC19D02289975D002E138D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = ACBC19BC22899757002E138D;
+					};
+				};
+			};
+			buildConfigurationList = ACBC19B822899757002E138D /* Build configuration list for PBXProject "FooodTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBC19B422899757002E138D;
+			productRefGroup = ACBC19BE22899757002E138D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBC19BC22899757002E138D /* FooodTracker */,
+				ACBC19D02289975D002E138D /* FooodTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBC19BB22899757002E138D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBC19CB2289975C002E138D /* LaunchScreen.storyboard in Resources */,
+				ACBC19C82289975C002E138D /* Assets.xcassets in Resources */,
+				ACBC19C622899757002E138D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBC19CF2289975D002E138D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBC19B922899757002E138D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBC19C322899757002E138D /* ViewController.swift in Sources */,
+				ACBC19C122899757002E138D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBC19CD2289975D002E138D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBC19D62289975D002E138D /* FooodTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBC19D32289975D002E138D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBC19BC22899757002E138D /* FooodTracker */;
+			targetProxy = ACBC19D22289975D002E138D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBC19C422899757002E138D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBC19C522899757002E138D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACBC19C92289975C002E138D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBC19CA2289975C002E138D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBC19D82289975D002E138D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBC19D92289975D002E138D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBC19DB2289975D002E138D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FooodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gms712.FooodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBC19DC2289975D002E138D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FooodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gms712.FooodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBC19DE2289975D002E138D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FooodTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gms712.FooodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FooodTracker.app/FooodTracker";
+			};
+			name = Debug;
+		};
+		ACBC19DF2289975D002E138D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FooodTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gms712.FooodTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FooodTracker.app/FooodTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBC19B822899757002E138D /* Build configuration list for PBXProject "FooodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBC19D82289975D002E138D /* Debug */,
+				ACBC19D92289975D002E138D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBC19DA2289975D002E138D /* Build configuration list for PBXNativeTarget "FooodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBC19DB2289975D002E138D /* Debug */,
+				ACBC19DC2289975D002E138D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBC19DD2289975D002E138D /* Build configuration list for PBXNativeTarget "FooodTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBC19DE2289975D002E138D /* Debug */,
+				ACBC19DF2289975D002E138D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACBC19B522899757002E138D /* Project object */;
+}
