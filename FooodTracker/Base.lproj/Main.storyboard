@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kWD-G9-aEC">
-                                <rect key="frame" x="0.0" y="40" width="375" height="96.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kWD-G9-aEC">
+                                <rect key="frame" x="0.0" y="40" width="375" height="58.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-qm-QzE">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <rect key="frame" x="144.5" y="0.0" width="86.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -33,24 +33,27 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhF-RB-39o">
-                                        <rect key="frame" x="0.0" y="66.5" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll3-2z-Fdm"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="5RP-D7-jGE" secondAttribute="trailing" id="PZ5-OS-Ex7"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Rhb-Kd-HOP">
-                                <rect key="frame" x="0.0" y="144" width="375" height="540"/>
+                            <stackView opaque="NO" contentMode="center" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RJ0-sT-DhJ" customClass="RatingControl" customModule="FooodTracker" customModuleProvider="target">
+                                <rect key="frame" x="46.5" y="481.5" width="282" height="50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                        <size key="value" width="50" height="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Rhb-Kd-HOP">
+                                <rect key="frame" x="16" y="118.5" width="343" height="343"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Rhb-Kd-HOP" secondAttribute="height" multiplier="125:126" id="R0X-6y-aNf"/>
-                                    <constraint firstAttribute="width" secondItem="Rhb-Kd-HOP" secondAttribute="height" multiplier="1:1" id="Rtc-wv-S3p"/>
+                                    <constraint firstAttribute="width" secondItem="Rhb-Kd-HOP" secondAttribute="height" multiplier="1:1" id="Oyy-Ub-WLg"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="IXS-BJ-Hfh" appends="YES" id="hpB-Pb-rAm"/>
@@ -59,12 +62,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CIj-cU-MmO"/>
-                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="top" secondItem="kWD-G9-aEC" secondAttribute="bottom" constant="7.5" id="Ff2-o8-KWT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rhb-Kd-HOP" secondAttribute="trailing" id="2HM-qE-mGr"/>
+                            <constraint firstItem="RJ0-sT-DhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46.399999999999999" id="HqA-d3-MCF"/>
                             <constraint firstItem="kWD-G9-aEC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q1M-nq-dFw"/>
-                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dCv-Ue-6Fw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RJ0-sT-DhJ" secondAttribute="trailing" constant="46.600000000000001" id="RBf-2Q-hXJ"/>
+                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="top" secondItem="kWD-G9-aEC" secondAttribute="bottom" constant="7.5" id="U32-Md-y4Q"/>
+                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="top" secondItem="kWD-G9-aEC" secondAttribute="bottom" constant="20" id="hjg-Wn-18Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWD-G9-aEC" secondAttribute="trailing" id="kS9-DL-zrl"/>
                             <constraint firstItem="kWD-G9-aEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lJF-2H-umb"/>
+                            <constraint firstItem="RJ0-sT-DhJ" firstAttribute="top" secondItem="Rhb-Kd-HOP" secondAttribute="bottom" constant="20" id="qKH-EE-RyL"/>
+                            <constraint firstItem="Rhb-Kd-HOP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uRP-G0-rGT"/>
+                            <constraint firstItem="RJ0-sT-DhJ" firstAttribute="top" secondItem="Rhb-Kd-HOP" secondAttribute="bottom" constant="20" id="vwK-k8-yJ4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,6 +80,7 @@
                         <outlet property="mealNameLabel" destination="uR9-qm-QzE" id="TxI-IK-XY6"/>
                         <outlet property="nameTextField" destination="5RP-D7-jGE" id="uNJ-2j-D9r"/>
                         <outlet property="photoImageView" destination="Rhb-Kd-HOP" id="CLq-R9-fwk"/>
+                        <outlet property="ratingControl" destination="RJ0-sT-DhJ" id="1CD-tQ-VBB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
