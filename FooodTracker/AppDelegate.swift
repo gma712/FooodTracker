@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FooodTracker
 //
-//  Created by 梶間悠平 on 2019/05/13.
+//  Created by gma712 on 2019/05/13.
 //  Copyright © 2019 gma712. All rights reserved.
 //
 
