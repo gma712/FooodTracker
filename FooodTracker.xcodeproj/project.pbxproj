@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC328B4E2298EA930031D1C9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC328B4D2298EA930031D1C9 /* Meal.swift */; };
+		AC328B5022992E5D0031D1C9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC328B4F22992E5D0031D1C9 /* MealTableViewCell.swift */; };
+		AC328B52229939F60031D1C9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC328B51229939F60031D1C9 /* MealTableViewController.swift */; };
 		ACA4B57622910893004E195D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4B57522910893004E195D /* RatingControl.swift */; };
 		ACBC19C122899757002E138D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC19C022899757002E138D /* AppDelegate.swift */; };
 		ACBC19C322899757002E138D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC19C222899757002E138D /* ViewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC328B4D2298EA930031D1C9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		AC328B4F22992E5D0031D1C9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		AC328B51229939F60031D1C9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		ACA4B57522910893004E195D /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		ACBC19BD22899757002E138D /* FooodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBC19C022899757002E138D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 				ACBC19C022899757002E138D /* AppDelegate.swift */,
 				ACBC19C222899757002E138D /* ViewController.swift */,
 				ACA4B57522910893004E195D /* RatingControl.swift */,
+				AC328B4D2298EA930031D1C9 /* Meal.swift */,
+				AC328B4F22992E5D0031D1C9 /* MealTableViewCell.swift */,
+				AC328B51229939F60031D1C9 /* MealTableViewController.swift */,
 				ACBC19C422899757002E138D /* Main.storyboard */,
 				ACBC19C72289975C002E138D /* Assets.xcassets */,
 				ACBC19C92289975C002E138D /* LaunchScreen.storyboard */,
@@ -200,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC328B4E2298EA930031D1C9 /* Meal.swift in Sources */,
 				ACBC19C322899757002E138D /* ViewController.swift in Sources */,
 				ACA4B57622910893004E195D /* RatingControl.swift in Sources */,
 				ACBC19C122899757002E138D /* AppDelegate.swift in Sources */,
+				AC328B52229939F60031D1C9 /* MealTableViewController.swift in Sources */,
+				AC328B5022992E5D0031D1C9 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4NAKFZ9Z6;
 				INFOPLIST_FILE = FooodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4NAKFZ9Z6;
 				INFOPLIST_FILE = FooodTracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,6 +416,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4NAKFZ9Z6;
 				INFOPLIST_FILE = FooodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +437,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4NAKFZ9Z6;
 				INFOPLIST_FILE = FooodTrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
