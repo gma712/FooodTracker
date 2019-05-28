@@ -134,18 +134,50 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         // Hide the keyboard.
         nameTextField.resignFirstResponder()
         
-        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let myAlert = UIAlertController(title: "Add New Image", message: "Select Your Action", preferredStyle: UIAlertController.Style.actionSheet)
+        
+        let myAction_1 = UIAlertAction(title: "Take New Photo.", style: .default) {action in self.setImage("new")}
+        let myAction_2 = UIAlertAction(title: "Choose from Library", style: .default) {action in self.setImage("lib")}
+        let myAction_3 = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        myAlert.addAction(myAction_1)
+        myAlert.addAction(myAction_2)
+        myAlert.addAction(myAction_3)
+        
+        present(myAlert, animated:true, completion: nil)
+        
+    }
+    
+    
+    private func setImage(_ action: String) {
         let imagePickerController = UIImagePickerController()
         
-        // Only allow photos to be picked, not taken.
-        imagePickerController.sourceType = .photoLibrary
+        switch action {
+        case "new":
+            imagePickerController.sourceType = .camera
+        case "lib":
+            imagePickerController.sourceType = .photoLibrary
+        default:
+            fatalError("No actions was selected.")
+        }
         
-        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    @IBAction func takeNewPhoto(_ sender: UILongPressGestureRecognizer) {
+        
+        // Hide the keyboard.
+        nameTextField.resignFirstResponder()
+        
+        let imagePickerController = UIImagePickerController()
+        
+        imagePickerController.sourceType = .camera
         imagePickerController.delegate = self
         present(imagePickerController, animated: true, completion: nil)
         
     }
-
+    
     //MARK: Private Methods
     private func updateSaveButtonState() {
         //Disable the Save button if the text field is empty.

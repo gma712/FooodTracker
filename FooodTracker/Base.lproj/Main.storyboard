@@ -109,6 +109,7 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="IXS-BJ-Hfh" appends="YES" id="hpB-Pb-rAm"/>
+                                    <outletCollection property="gestureRecognizers" destination="ifh-05-DMg" appends="YES" id="duC-bj-ki4"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -155,6 +156,12 @@
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="rUX-1a-UAN"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="hBD-vC-pRn"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ifh-05-DMg">
+                    <connections>
+                        <action selector="takeNewPhoto:" destination="BYZ-38-t0r" id="PR9-eK-2Pp"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2223.1999999999998" y="14.842578710644679"/>
         </scene>
@@ -199,6 +206,6 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0bq-XK-92P"/>
+        <segue reference="F9c-xw-Mru"/>
     </inferredMetricsTieBreakers>
 </document>
