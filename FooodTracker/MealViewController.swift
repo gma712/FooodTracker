@@ -136,7 +136,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         let myAlert = UIAlertController(title: "Add New Image", message: "Select Your Action", preferredStyle: UIAlertController.Style.actionSheet)
         
-        let myAction_1 = UIAlertAction(title: "Take New Photo.", style: .default) {action in self.setImage("new")}
+        let myAction_1 = UIAlertAction(title: "Take New Photo.", style: .default, handler: {action in self.setImage("new")})
         let myAction_2 = UIAlertAction(title: "Choose from Library", style: .default) {action in self.setImage("lib")}
         let myAction_3 = UIAlertAction(title: "Cancel", style: .cancel)
         
@@ -165,18 +165,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         present(imagePickerController, animated: true, completion: nil)
     }
     
-    @IBAction func takeNewPhoto(_ sender: UILongPressGestureRecognizer) {
-        
-        // Hide the keyboard.
-        nameTextField.resignFirstResponder()
-        
-        let imagePickerController = UIImagePickerController()
-        
-        imagePickerController.sourceType = .camera
-        imagePickerController.delegate = self
-        present(imagePickerController, animated: true, completion: nil)
-        
-    }
     
     //MARK: Private Methods
     private func updateSaveButtonState() {
